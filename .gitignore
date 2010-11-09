@@ -1,0 +1,8 @@
+.DS_Store
+Makefile
+version.h
+CMakeCache.txt
+CMakeFiles
+*.a
+*.cmake
+run_tests
