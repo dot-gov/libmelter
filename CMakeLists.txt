@@ -32,6 +32,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 # settings for Microsoft Visual C++
 IF(CMAKE_CXX_COMPILER MATCHES "CL|cl")
+  include_directories("c:\\win32-deps\\boost\\boost_1_44")
   IF(NOT WITH_SHARED_LIBS)
     IF(CMAKE_GENERATOR STREQUAL "Visual Studio 6")
       SET(CMAKE_CXX_FLAGS "/nologo /W3 /GX /Gy /YX")
