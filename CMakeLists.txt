@@ -19,6 +19,7 @@ configure_file (
     "${PROJECT_BINARY_DIR}/version.h"
 )
 
+include_directories("${PROJECT_SOURCE_DIR}")
 include_directories("${PROJECT_BINARY_DIR}")
 
 option(WITH_TESTS "Build unit tests" ON)

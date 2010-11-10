@@ -41,8 +41,8 @@ public:
          * Gives a pointer to the data contained in the buffer.
          * @return a pointer to buffer.
          */
-	char* ptr() { return &_data[0]; }
-
+	char* ptr() { return (_data.size() ? &_data[0] : NULL); } // On VS.2008 crashes if dereferencing _data[0] when _data is NULL
+	
         /**
          * Gives a reference to internal vector (used for storing data).
          * @return a reference to vector<char>

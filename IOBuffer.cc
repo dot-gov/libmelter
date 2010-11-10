@@ -59,7 +59,12 @@ Chunk IOBuffer::range( BufferDescriptor descriptor )
         return Chunk( "", BufferDescriptor( descriptor.offset(), 0));
     
     std::size_t index = descriptor.offset() - _offset;
-    return Chunk(&_data[index], BufferDescriptor(descriptor.offset(), descriptor.size()) );
+
+	char *data = NULL;
+	if (_data.size())
+		data = &_data[index];
+
+	return Chunk(data, BufferDescriptor(descriptor.offset(), descriptor.size()) );
 }
 
 Chunk IOBuffer::range( std::size_t start_offset, std::size_t size )
