@@ -12,6 +12,7 @@
 #include "Chunk.h"
 #include "IOManager.h"
 #include "Mangler.h"
+#include "version.h"
 
 Melter::Melter(::prototype::Parser& parser, ::prototype::Mangler& mangler)
 : _parser(parser), _mangler(mangler), _defective(false)
