@@ -59,7 +59,7 @@ namespace {
     
     TEST_F(ChunkTest, pointer_is_valid)
     {
-        ASSERT_TRUE( _chunk->ptr() );
+        ASSERT_TRUE( _chunk->ptr() != NULL );
     }
     
     TEST_F(ChunkTest, vector_reference_is_valid)
