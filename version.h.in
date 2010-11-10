@@ -8,8 +8,8 @@
 #ifndef VERSION_H
 #define	VERSION_H
 
-#define pemelter_VERSION_MAJOR @pemelter_VERSION_MAJOR@
-#define pemelter_VERSION_MINOR @pemelter_VERSION_MINOR@
+#define libmelter_VERSION_MAJOR @libmelter_VERSION_MAJOR@
+#define libmelter_VERSION_MINOR @libmelter_VERSION_MINOR@
 
 #endif	/* VERSION_H */
 
